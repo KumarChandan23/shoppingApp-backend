@@ -4,7 +4,7 @@ const { registerUser, loginUser, logOut } = require("../controllers/user.control
 
 const router = Router();
 
-router.get("/home",(req,res)=>{
+router.get("/",(req,res)=>{
     res.status(200).send("Hello Developer, This is landing Page")
 })
 router.post("/register",registerUser);
