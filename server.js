@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json())
 
 app.use("/api/v1/users", userRouter)
-
+app.use("/")
 app.listen(PORT, (error) => {
     if (error) console.log(error)
     console.log("Express is running on port: ", PORT)
