@@ -8,7 +8,7 @@ router.post("/register",registerUser);
 router.post("/login", loginUser);
 router.get("/logout", logOut)
 router.get("/",(req,res)=>{
-    res.send("Hellow Developer")
+    res.send("Hello Developer")
 })
 
 module.exports = router;
